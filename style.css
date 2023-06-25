@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ /* Agora iremos criar nossas variaveis de acordo com o tamanho de nossas fontes e nossa cores*/
+
+ :root {
+  --ff-heading: font-family: 'Staatliches', cursive;
+  --ff-texting: font-family: 'Palanquin', sans-serif;
+  font-size: 62.5%;
+  --fs-heading: 4rem;
+  --fs-texting: 2rem;
+  --fc-primary: hsla(233, 100%, 97%, 1);
+  --fc-secundary: hsl(274, 84%, 12%);
+  --bc-primary:  hsl(218, 17%, 62%);
+  --bc-secundary: hsl(233, 100%, 97%);
+ }
+
+ body {
+  font-family: var(--ff-heading);
+  background-color: var(--bc-primary);
+  color: var(--fc-primary);
+  font-size: var(--fs-heading);
+  min-width: 38.4rem;
+  height: 199.5rem;
+ }
+
+ .page {
+	max-width: 32rem;
+	margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  align-items: center;
+  width: 38.4rem;
+  height: 27.9rem;
+background: hsla(232, 17%, 35%, 1);
+}
+.logo {
+ padding: 0 12.3rem;
+}
+
+header img {
+	align-items: center;
+  width: 13.7rem;
+height: 13.7rem;
+top: 3.2rem;
+left: 12.4rem;
+display: flex;
+}
+
+header h1 {
+  align-items: center;
+  background: hsla(275, 18%, 79%, 1);
+  line-height: 3.4rem;
+  font-weight: 400;
+  padding: 1rem 5rem ;
+  font-family: Staatliches;
+font-size: 40px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0.05rem;
+text-align: center;
+}
+ 
+main {
+  margin-top: 1.3rem;
+  display: grid;
+  gap: 3rem;
+  min-width: 38.4rem;
+  border-radius: 8px;
+}
+
+.card {
+	position: relative;
+	font-family: var(--ff-heading);
+  align-items: center;
+}
+main p {
+  width: 38.4rem;
+  font-family: 'Palanquin', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 15px;
+text-align: center;
+padding: 0 0rem;
+color:  hsla(274, 84%, 12%, 1);
+}
+
+.card img {
+	height: 25rem;
+	object-fit: cover;
+	border-radius: 20px;
+	transition: all 200ms;
+  align-items: center;
+}
+
+.card img:hover {
+	transform: scale(1.1);
+	opacity: 0.4;
+}
+
+.card  span {
+	border-radius: 2rem;
+	background-color: hsla(312, 91%, 96%, 1);
+	font-size: 2rem;
+	font-weight: 400;
+	color:  hsla(232, 17%, 35%, 1);
+	padding: 0 1.6rem;
+	display: inline-flex;
+	align-items: center;
+	width: fit-content;
+  top:2rem;
+  position: absolute;
+  right: 2rem;
+  text-transform: uppercase;
+  font-family: 'Staatliches',cursive;
+}
